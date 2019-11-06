@@ -1,0 +1,60 @@
+{
+    "name": "Aditya",
+    "year": 2020,
+    "age": 21,
+    "majors": ["Computer Science", "Mathematics"],
+    "location": {
+        "building": "Easton Ave Apartments",
+        "campus": "College Ave"
+    }
+}
+{
+    "name": "Alex",
+    "year": 2021,
+    "age": 20,
+    "majors": ["Computer Science", "Philosophy"],
+    "location": {
+        "building": "Silvers",
+        "campus": "Busch"
+    }
+}
+{
+    "name": "Su Min",
+    "year": 2022,
+    "age": 19,
+    "majors": ["Computer Science"],
+    "location": {
+        "building": "Judson",
+        "campus": "Busch"
+    }
+}
+{
+    "name": "Daniel",
+    "year": 2022,
+    "age": 19,
+    "majors": ["Mathematics", "Philosophy"],
+    "location": {
+        "building": "Morrow",
+        "campus": "Busch"
+    }
+}
+{
+    "name": "Madhu",
+    "year": 2021,
+    "age": 19,
+    "majors": ["Computer Science"],
+    "location": {
+        "building": "Morrow",
+        "campus": "Busch"
+    }
+}
+{
+    "name": "Shashank",
+    "year": 2020,
+    "age": 22,
+    "majors": ["Computer Science", "Cognitive Science"],
+    "location": {
+        "building": "Home",
+        "campus": "Off-Campus"
+    }
+}

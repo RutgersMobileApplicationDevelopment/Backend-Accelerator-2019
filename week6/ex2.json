@@ -1,0 +1,96 @@
+{
+    "name": "Olive Garden",
+    "location": {
+        "street": "4 Main St.",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10005"
+    },
+    "items": [
+        {
+            "name": "Pasta",
+            "price": 12
+        },
+        {
+            "name": "Breadsticks",
+            "price": 6
+        }
+    ]
+}
+{
+    "name": "Honeygrow",
+    "location": {
+        "street": "45 College Ave.",
+        "state": "NJ",
+        "city": "New Brunswick",
+        "zip": "08901"
+    },
+    "items": [
+        {
+            "name": "Stir Fry",
+            "price": 11
+        },
+        {
+            "name": "Salad",
+            "price": 8
+        },
+        {
+            "name": "Yogurt",
+            "price": 6
+        }
+    ]
+}
+{
+    "name": "Tacoria",
+    "location": {
+        "street": "60 Easton Ave.",
+        "state": "NJ",
+        "city": "New Brunswick",
+        "zip": "08901"
+    },
+    "items": [
+        {
+            "name": "Tacos",
+            "price": 12
+        },
+        {
+            "name": "Quesadilla",
+            "price": 9
+        },
+        {
+            "name": "Burrito",
+            "price": 10
+        },
+        {
+            "name": "Nachos",
+            "price": 7
+        }
+    ]
+}
+{
+    "name": "Tacoria",
+    "location": {
+        "street": "18 Nassau St.",
+        "city": "Princeton",
+        "state": "NJ",
+        "zip": "08540"
+    },
+    "items": [
+        {
+            "name": "Tacos",
+            "price": 12
+        },
+        {
+            "name": "Quesadilla",
+            "price": 9
+        },
+        {
+            "name": "Burrito",
+            "price": 10
+        },
+        {
+            "name": "Nachos",
+            "price": 7
+        }
+    ]
+}
