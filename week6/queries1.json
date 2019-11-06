@@ -1,0 +1,47 @@
+Query 1: CS is one of their majors (array matching)
+db.persons.find({
+    "majors": "Computer Science"
+})
+
+
+Query 2: They live on Busch (subdocument dot notation)
+db.persons.find({
+    "location.campus": "Busch"
+})
+
+
+Query 3: Their graduation year is 2020 or earlier ($lte, $gte)
+db.persons.find({
+    "year": {
+        "$lte": 2020
+    }
+})
+db.persons.find({
+    "year": {
+        "$gte": 2020
+    }
+})
+db.persons.find({
+    "year": {
+        "$gte": 2018,
+        "$lte": 2020
+    }
+})
+
+
+Query 4: Their name is Shashank, Dan, or Su Min - ($in)
+db.persons.find({
+    "name": {
+        "$in": ["Shashank", "Daniel", "Su Min"]
+    }
+})
+
+
+Update 1:
+db.persons.update({
+    "name": "Alex"
+}, {
+    "$inc": {
+        "age": 1
+    }
+})

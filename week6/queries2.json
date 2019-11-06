@@ -1,0 +1,53 @@
+Query 1: They have Tacos on their menu (dot notation on nested subdocument array)
+db.restaurants.find({
+    "items.name": "Tacos"
+})
+
+Query 2: They are in New Brunswick OR the name is Olive Garden ($or)
+db.restaurants.find({
+    "$or": [
+        {
+            "location.city": "New Brunswick"
+        },
+        {
+            "name": "Olive Garden"
+        }
+    ]
+})
+
+
+Update 1: For restaurants with name Tacoria, add a menu item called Horchata with price 4 ($push)
+db.restaurants.updateMany({
+    "name": "Tacoria"
+}, {
+    "$push": {
+        "items": {
+            "name": "Horchata",
+            "price": 4
+        }
+    }
+})
+
+
+Update 2: Remove Yogurt from Honeygrow’s menu
+db.restaurants.update({
+    "name": "Honeygrow"
+}, {
+    "$pull": {
+        "items": {
+            "name": "Yogurt"
+        }
+    }
+})
+
+
+Update 3: Change the location for Olive Garden 
+db.restaurants.update({
+    "name": "Olive Garden"
+}, {
+    "$set": {
+        "location.city": "Edison",
+        "location.zip": "08817",
+        "location.street": "18 Powell St."
+    }
+})
