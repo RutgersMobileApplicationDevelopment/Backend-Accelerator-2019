@@ -1,0 +1,54 @@
+# remove yogurt from honeygrow's in new brunswick menu
+# {
+#     "name": "Honeygrow",
+#     "location": {
+#         "state": "NJ",
+#         "city": "New Brunswick"
+#     },
+#     "items": [
+#         {
+#             "name": "Stir Fry",
+#             "price": "10"
+#         },
+#             {
+#                 "name": "Ice Cream"
+#                 "price": 20
+#             },
+#         {
+#             "name": "Yogurt",
+#             "price": 5
+#         }
+#     ]
+# }
+
+
+
+restaurants_collection.update(
+    {
+        "name": "Honeygrow",
+        "location.city": "New Brunswick"
+    },
+    {
+        "$pull": {
+            "items": {
+                "price": {
+                    "$gt": 5
+                }
+            }
+        }
+    }
+)
+
+
+# change the location for Olive garden in Edison to be in Metuchen
+restaurants_collection.update(
+    {
+        "name": "Olive Garden",
+        "location.city": "Edison"
+    },
+    {
+        "$set": {
+            "location.city": "Metuchen"
+        }
+    }
+)
